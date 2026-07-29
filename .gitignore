@@ -6,14 +6,13 @@ tiny-service/tiny-service
 
 shared-docs
 kits
-tools-kit.zip
+*.zip
 custom-template/
-my-copilot-tools.tar
+*.tar
 .vscode
 
 container.escape
 AGENTS.md
-*.tar
 .DS_Store
 sbx-diagnostics-*
 HANDOFF.md

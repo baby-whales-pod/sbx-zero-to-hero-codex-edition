@@ -76,6 +76,9 @@ By the end, participants can:
 ### Module 6 — Advanced Git workspaces
 - **Clone mode** (`--clone`): the agent works on a private in-container clone of your repo instead of your live files; sync commits back with the `sandbox-<name>` remote — [`06-01.clone-mode.md`](./06-01.clone-mode.md).
 
+### Module 7 — MCP: giving the agent tools
+- **Local MCP gateway**: force the local MCP gateway, register public no-auth MCP servers (DeepWiki, Context7) and use them from the agent — [`07-01.local-mcp-gateway.md`](./07-01.local-mcp-gateway.md). *(requires a recent `sbx` build)*
+
 ### Topics on the roadmap *(may or may not be covered)*
 AI governance policies, audit, git worktrees, and multiple workspaces — these are being drafted and may be added or adapted per session.
 
