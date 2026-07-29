@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="sbx-architecture" name="sbx architecture">
+    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageWidth="900" pageHeight="560" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="hostBg" value="Your machine (host)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#4caf50;verticalAlign=top;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="560" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="vmBg" value="Sandbox (isolated micro-VM / container)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#fb8c00;verticalAlign=top;fontStyle=1;fontSize=12;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="480" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="netBg" value="Internet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eceff1;strokeColor=#90a4ae;verticalAlign=top;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="200" height="480" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dev" value="Developer&#10;(sbx CLI / dashboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daemon" value="sandboxd (daemon)&#10;+ sandboxlib&#10;manages VM lifecycle &amp; API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="80" y="185" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="keychain" value="Host keychain&#10;(single source of truth&#10;for real credentials)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#ffe0b2;strokeColor=#e65100;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proxy" value="Host Proxy&#10;• enforces network policy&#10;• MITM CA for HTTPS&#10;• injects credentials at egress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc80;strokeColor=#e65100;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="agent" value="AI agent (e.g. Codex)&#10;sees only placeholders&#10;(OPENAI_API_KEY = proxy-managed)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#fb8c00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="openai" value="api.openai.com" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfd8dc;strokeColor=#546e7a;" vertex="1" parent="1">
+          <mxGeometry x="690" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="github" value="api.github.com" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfd8dc;strokeColor=#546e7a;" vertex="1" parent="1">
+          <mxGeometry x="690" y="220" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" value="create / manage" style="endArrow=block;html=1;" edge="1" parent="1" source="dev" target="daemon">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="reads real secrets (host only)" style="endArrow=block;html=1;dashed=1;" edge="1" parent="1" source="keychain" target="proxy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="all outbound HTTP/HTTPS" style="endArrow=block;html=1;" edge="1" parent="1" source="agent" target="proxy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="request with real key injected" style="endArrow=block;html=1;" edge="1" parent="1" source="proxy" target="openai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="endArrow=block;html=1;" edge="1" parent="1" source="proxy" target="github">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

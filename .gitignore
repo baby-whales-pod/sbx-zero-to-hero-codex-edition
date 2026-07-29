@@ -1,0 +1,18 @@
+sandboxes/
+sandboxes
+# this is a git repository created during the workshop
+hello-sbx/
+tiny-service/tiny-service
+
+shared-docs
+kits
+tools-kit.zip
+custom-template/
+my-copilot-tools.tar
+.vscode
+
+container.escape
+AGENTS.md
+*.tar
+.DS_Store
+sbx-diagnostics-*
