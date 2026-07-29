@@ -79,6 +79,9 @@ By the end, participants can:
 ### Module 7 — MCP: giving the agent tools
 - **Local MCP gateway**: force the local MCP gateway, register public no-auth MCP servers (DeepWiki, Context7) and use them from the agent — [`07-01.local-mcp-gateway.md`](./07-01.local-mcp-gateway.md). *(requires a recent `sbx` build)*
 
+### Module 8 — SSH access
+- **SSH into a sandbox**: turn a sandbox into a first-class SSH host (`ssh <name>.sbx`) with `sbx setup ssh`, run shells and one-shot commands, and open it in VS Code / Cursor Remote-SSH — [`08-01.ssh-access.md`](./08-01.ssh-access.md). *(experimental, off by default; requires a recent `sbx` build)*
+
 ### Topics on the roadmap *(may or may not be covered)*
 AI governance policies, audit, git worktrees, and multiple workspaces — these are being drafted and may be added or adapted per session.
 
