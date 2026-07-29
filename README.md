@@ -76,6 +76,9 @@ By the end, participants can:
 ### Module 6 — Advanced Git workspaces
 - **Clone mode** (`--clone`): the agent works on a private in-container clone of your repo instead of your live files; sync commits back with the `sandbox-<name>` remote — [`06-01.clone-mode.md`](./06-01.clone-mode.md).
 
+> [!WARNING]
+> 🛑 **Modules 7 and 8 are not active yet.** They target features (`sbx mcp`, SSH access) that are **not released** in the `sbx` v0.37.0 this workshop was validated on — MCP is newer than the published CLI and SSH is experimental and off by default. Both lessons are published as **previews** and become usable once the features ship in a public release. Each lesson carries its own warning banner with details.
+
 ### Module 7 — MCP: giving the agent tools
 - **Local MCP gateway**: force the local MCP gateway, register public no-auth MCP servers (DeepWiki, Context7) and use them from the agent — [`07-01.local-mcp-gateway.md`](./07-01.local-mcp-gateway.md). *(requires a recent `sbx` build)*
 
