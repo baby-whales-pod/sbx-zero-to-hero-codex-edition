@@ -73,8 +73,11 @@ By the end, participants can:
 - **Custom template from a Dockerfile**: build a reproducible base image — [`05-03.custom-template-dockerfile.md`](./05-03.custom-template-dockerfile.md).
 - **Build a template inside a sandbox**: when the host has no Docker, use the sandbox's own Docker engine — [`05-04.build-template-in-sandbox.md`](./05-04.build-template-in-sandbox.md).
 
+### Module 6 — Advanced Git workspaces
+- **Clone mode** (`--clone`): the agent works on a private in-container clone of your repo instead of your live files; sync commits back with the `sandbox-<name>` remote — [`06-01.clone-mode.md`](./06-01.clone-mode.md).
+
 ### Topics on the roadmap *(may or may not be covered)*
-AI governance policies, audit, **clone mode**, git worktrees, and multiple workspaces — these are being drafted and may be added or adapted per session.
+AI governance policies, audit, git worktrees, and multiple workspaces — these are being drafted and may be added or adapted per session.
 
 ## Format & logistics
 
