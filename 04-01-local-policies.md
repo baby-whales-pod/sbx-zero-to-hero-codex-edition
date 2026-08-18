@@ -42,6 +42,7 @@ Now let's check from inside the sandbox with a real request:
 ```bash
 sbx exec codex-hello-sbx -- curl -sS -o /dev/null -w "%{http_code}\n" https://example.com
 ```
+> You should get `200`
 
 ## 3. Block a domain (deny) and observe the 403
 
@@ -101,7 +102,7 @@ Test the request: it is now blocked.
 sbx exec codex-hello-sbx -- curl -sS https://httpbin.org
 ```
 
-> 👋👀 have look to the `sbx` dashboard
+> 👋👀 have look to the `sbx` dashboard and select the `codex-hello-sbx` sandbox
 
 ## 5. Allow a domain (allow)
 
