@@ -15,7 +15,7 @@ You can mount:
 
 ## 1. Prepare a second directory on the host
 
-From your `hello-sbx` repository:
+**From your `hello-sbx` repository**:
 
 ```bash
 # a folder we will mount READ-ONLY
@@ -108,6 +108,17 @@ sbx exec codex-workspaces -- sh -c 'echo "written by the agent side" > proof.txt
 sbx exec codex-workspaces -- sh -c 'echo nope >> ../shared-docs/REFERENCE.md'
 # -> Read-only file system
 ```
+
+> If you are on Windows:
+> ```powershell
+> # write into the read-write workspace: OK
+> sbx exec codex-workspaces -- sh -c "echo 'written by the agent side' > proof.txt && echo OK"
+> 
+> # write into the read-only workspace: DENIED
+> sbx exec codex-workspaces -- sh -c "echo nope >> ../shared-docs/REFERENCE.md"
+> # -> Read-only file system
+> ```
+
 
 > ✋ Workspaces are mounted **at the same absolute path as on the host** (check the WORKSPACE column of `sbx ls`), so relative paths from the primary workspace resolve exactly like on your machine.
 
