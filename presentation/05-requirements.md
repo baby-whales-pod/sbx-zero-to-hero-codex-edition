@@ -57,13 +57,12 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# Requirements
 
 
-### University of Edinburgh - August 2026
-
-
-
+- Install `sbx`
+- GitHub account (and a PAT)
+- Docker Hub account
+- OpenAI API key

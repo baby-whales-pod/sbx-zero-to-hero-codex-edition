@@ -57,13 +57,15 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# Today
 
+- We're going to talk about `sbx` and run a "short" hands-on workshop
+- Actually, *you* are the ones doing the work: just follow along with the markdown files
+- We won't cover every module (I'll suggest a shortlist on the next slide)
+  - > But you can take it all home with you and redo it at your own pace
+- First though, let's talk a bit about coding agents and `sbx` *(and why `sbx`)*
 
-### University of Edinburgh - August 2026
-
-
-
+![Repository w:260 h:260](../.assets/qrcode-repository.svg)
+> 🌍 https://github.com/baby-whales-pod/sbx-zero-to-hero-codex-edition

@@ -57,13 +57,8 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# SBX, it's ok to use `YOLO` mode, no secret leaks :tada:
 
-
-### University of Edinburgh - August 2026
-
-
-
+![sbx](../.assets/sbx-security-model.drawio.svg)

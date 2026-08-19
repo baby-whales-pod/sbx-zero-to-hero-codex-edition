@@ -57,13 +57,15 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# Who are we
 
-
-### University of Edinburgh - August 2026
-
+- **Philippe Charriere**, 🤓 very old geek
+  - Principal Solutions Architect at **Docker**
+  - ✉️ philippe.charriere@docker.com
+  - 🦋 @k33gorg.bsky.social
+- **John Feeney**
+  - Principal Solutions Engineer at **Docker**
 
 

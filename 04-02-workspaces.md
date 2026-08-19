@@ -62,6 +62,9 @@ The agent sees a **complete Linux filesystem** — but it is the **sandbox's own
 
 Think of it as two separate filesystems that **overlap only at the workspaces**:
 
+<!-- Mermaid source kept for reference — the rendered diagram is the
+     .drawio.svg below. Arrows are written "--&gt;" so they do not
+     close this HTML comment.
 ```mermaid
 flowchart LR
     subgraph HOST["🖥️ Host filesystem"]
@@ -85,6 +88,11 @@ flowchart LR
     S2 -. "does not exist on the host" .-x HOST
     S3 -. "does not exist on the host" .-x HOST
 ```
+-->
+
+![host vs sandbox filesystems](.assets/04-02-sbx-workspaces.drawio.svg)
+
+> 🖉 Editable source: [`.assets/04-02-sbx-workspaces.drawio.svg`](./.assets/04-02-sbx-workspaces.drawio.svg) — open at <https://app.diagrams.net>.
 
 The **only** bridge between the two is the mounted workspaces: a read-write workspace is a live bind-mount, so a change on one side is instantly visible on the other. Everything else the agent sees (the OS, the tools, its home) is its own throwaway world — deleting the sandbox with `sbx rm` discards it, while your host filesystem is untouched.
 

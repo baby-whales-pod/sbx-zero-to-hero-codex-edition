@@ -57,13 +57,16 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# Workshop Modules
 
 
-### University of Edinburgh - August 2026
-
-
-
+- 00-03.sbx-login.md
+- 01-01.create-the-sandbox.md
+- 01-02.walk-into-the-sandbox.md
+- 02-01.github-interaction.md
+- 03-01.env-vars-injection.md
+- 03-02.secrets-injection.md
+- 05-01.kits-add-your-tools.md
+- 07-01.local-mcp-gateway.md

@@ -44,6 +44,25 @@ By the end, participants can:
 - `sbx` installed and set up — see <https://docs.docker.com/ai/sandboxes/#get-started>.
 - VS Code + a terminal.
 
+## Viewing this material in VS Code
+
+Two VS Code extensions are needed to get the full experience. Both are already listed in [`.vscode/extensions.json`](./.vscode/extensions.json), so VS Code offers to install them when you open this folder ("Show Recommendations").
+
+| What | Extension | Why |
+|---|---|---|
+| **Diagrams** — `.assets/*.drawio.svg` | **Draw.io Integration** (`hediet.vscode-drawio`) | Open, zoom and **edit** the diagrams. They are SVG files with the draw.io model embedded, so the markdown preview displays them without any extension, but you need this extension to modify them (or open them at <https://app.diagrams.net>). |
+| **Slides** — `presentation/*.md` | **Marp for VS Code** (`marp-team.marp-vscode`) | The decks are [Marp](https://marp.app/) markdown (`marp: true` front-matter). Without the extension the preview shows raw markdown instead of slides. |
+
+```bash
+# install from the command line if you prefer
+code --install-extension hediet.vscode-drawio
+code --install-extension marp-team.marp-vscode
+```
+
+> 💡 The lesson diagrams also keep their original **mermaid** source, commented out right above each image, in case you want to compare or regenerate them.
+>
+> 💡 To export a deck without VS Code: `npx @marp-team/marp-cli presentation/00-intro.md --pdf`.
+
 ## Workshop outline
 
 ### Module 0 — Introduction & setup *(planned / evolving)*
@@ -68,7 +87,7 @@ By the end, participants can:
 - **Filesystem policies**: read vs write rules, and how read-only workspaces are the local way to restrict writes — [`04-03-filesystem-policies.md`](./04-03-filesystem-policies.md).
 
 ### Module 5 — Customize & share environments
-- **Kits**: declarative builder/launcher add-ons authored with the **v2 kit schema**; share via ZIP, OCI registry, or git *(experimental)* — [`05-01.templates-and-kits.md`](./05-01.templates-and-kits.md).
+- **Kits**: declarative builder/launcher add-ons authored with the **v2 kit schema**; share via ZIP, OCI registry, or git *(experimental)* — [`05-01.kits-add-your-tools.md`](./05-01.kits-add-your-tools.md).
 - **Snapshots**: freeze a prepared sandbox into a reusable template image — [`05-02.snapshots.md`](./05-02.snapshots.md).
 - **Custom template from a Dockerfile**: build a reproducible base image — [`05-03.custom-template-dockerfile.md`](./05-03.custom-template-dockerfile.md).
 - **Build a template inside a sandbox**: when the host has no Docker, use the sandbox's own Docker engine — [`05-04.build-template-in-sandbox.md`](./05-04.build-template-in-sandbox.md).
@@ -76,8 +95,6 @@ By the end, participants can:
 ### Module 6 — Advanced Git workspaces
 - **Clone mode** (`--clone`): the agent works on a private in-container clone of your repo instead of your live files; sync commits back with the `sandbox-<name>` remote — [`06-01.clone-mode.md`](./06-01.clone-mode.md).
 
-> [!WARNING]
-> 🛑 **Modules 7 and 8 are not active yet.** They target features (`sbx mcp`, SSH access) that are **not released** in the `sbx` v0.37.0 this workshop was validated on — MCP is newer than the published CLI and SSH is experimental and off by default. Both lessons are published as **previews** and become usable once the features ship in a public release. Each lesson carries its own warning banner with details.
 
 ### Module 7 — MCP: giving the agent tools
 - **Local MCP gateway**: force the local MCP gateway, register public no-auth MCP servers (DeepWiki, Context7) and use them from the agent — [`07-01.local-mcp-gateway.md`](./07-01.local-mcp-gateway.md). *(requires a recent `sbx` build)*

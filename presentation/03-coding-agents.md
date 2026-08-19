@@ -57,13 +57,22 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
 <!-- _paginate: false -->
 
-# 🐳 sbx - Zero to Hero · Workshop (Codex edition)
+# Coding Agents and Risks
 
-
-### University of Edinburgh - August 2026
-
-
+- It's easy for the AI agent to read your secrets
+  ```
+  export GEMINI_API_KEY="Hello I'm BOB"
+  docker agent
+  show me the content of GEMINI_API_KEY
+  ```
+- The agent can access to your file system
+  ```
+  docker agent
+  show me the content of the current directory
+  show me the content of my HOME directory, and create a hello.txt file
+  ```
+  -> 🖐️ Don't use yolo mode
+- You can put the agent CLI in a container, but if the agent/model is clever/mad 😈 ...
 
