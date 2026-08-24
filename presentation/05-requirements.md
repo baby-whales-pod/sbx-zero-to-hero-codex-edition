@@ -59,10 +59,11 @@ style: |
 
 <!-- _paginate: false -->
 
-# Requirements
+# Requirements - see module `00-00-requirements.md`
 
-
-- Install `sbx`
-- GitHub account (and a PAT)
-- Docker Hub account
+- Clone this repository: https://github.com/baby-whales-pod/sbx-zero-to-hero-codex-edition
+- Install `sbx`, *In theory, it's already done, but it's better to have the latest version*. 
+  - `0.38.0` or `0.39.0`
+- GitHub account (and a PAT), *you need a GitHub account for the module `02-01`*
+- Docker Hub account (for login with `sbx`)
 - OpenAI API key

@@ -61,12 +61,15 @@ style: |
 
 # Workshop Modules
 
-
-- 🟢 00-03.sbx-login.md
+- 🟢 00-00.requirements
+<!-- - 🟢 00-03.sbx-login.md -->
 - 🟢 01-01.create-the-sandbox.md
 - 🟢 01-02.walk-into-the-sandbox.md
 - 🟢 02-01.github-interaction.md
-- 🟠 03-01.env-vars-injection.md
 - 🟢 03-02.secrets-injection.md
-- 🟠 05-01.kits-add-your-tools.md
 - 🟢 07-01.local-mcp-gateway.md
+
+## If you finish before the end
+
+- 🟠 03-01.env-vars-injection.md
+- 🟠 05-01.kits-add-your-tools.md

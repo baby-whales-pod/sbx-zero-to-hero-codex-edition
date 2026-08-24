@@ -1,5 +1,21 @@
 # sbx — Zero to Hero · Workshop (Codex edition)
 
+> University of Edinburgh 2026-08-25
+> 
+> - 🟢 [00-00.requirements](./00-00.requirements)
+> - 🟢 [01-01.create-the-sandbox.md](./01-01.create-the-sandbox.md)
+> - 🟢 [01-02.walk-into-the-sandbox.md](./01-02.walk-into-the-sandbox.md)
+> - 🟢 [02-01.github-interaction.md](./02-01.github-interaction.md)
+> - 🟢 [03-02.secrets-injection.md](./03-02.secrets-injection.md)
+> - 🟢 [07-01.local-mcp-gateway.md](./07-01.local-mcp-gateway.md)
+> 
+> If you finish before the end
+> 
+> - 🟠 [03-01.env-vars-injection.md](./03-01.env-vars-injection.md)
+> - 🟠 [05-01.kits-add-your-tools.md](./05-01.kits-add-your-tools.md)
+
+<hr>
+
 ✋ This hands-on uses `sbx` and the **Codex** agent (OpenAI). Authentication is done with an **OpenAI API key** stored as an `sbx` secret — the key is injected by the proxy at request time and the sandbox only ever sees a `proxy-managed` placeholder.
 
 > Before you start, store your OpenAI API key once:
