@@ -64,6 +64,7 @@ style: |
 - It's easy for the AI agent to read your secrets
   ```
   export GEMINI_API_KEY="Hello I'm BOB"
+  export ANTHROPIC_API_KEY=$(op read 'op://dev/anthropic/credential')
   docker agent
   show me the content of GEMINI_API_KEY
   ```
