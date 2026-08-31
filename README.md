@@ -1,5 +1,9 @@
 # sbx — Zero to Hero · Workshop (Codex edition)
 
+> [!NOTE]
+> - **This workshop has been done for `sbx v0.38.0`**
+> - 🚧 work in progress, updating for `sbx rc2 or sbx v0.40.0`
+
 > University of Edinburgh 2026-08-25
 > 
 > - 🟢 [00-00.requirements](./00-00.requirements)
