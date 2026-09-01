@@ -1,0 +1,38 @@
+# Managed by IssueSpec. Hand edits are welcome; keep the schema valid.
+labels:
+  - name: bug
+    color: "#d73a4a"
+    description: Something is not working
+  - name: documentation
+    color: "#0075ca"
+    description: Improvements or additions to documentation
+  - name: enhancement
+    color: "#a2eeef"
+    description: New feature or request
+  - name: question
+    color: "#d876e3"
+    description: Further information is requested
+  - name: wontfix
+    color: "#ffffff"
+    description: This will not be worked on
+  - name: priority::low
+    color: "#c5def5"
+    description: Can wait
+  - name: priority::medium
+    color: "#fbca04"
+    description: Normal priority
+  - name: priority::high
+    color: "#d93f0b"
+    description: Should be picked up next
+  - name: priority::urgent
+    color: "#b60205"
+    description: Drop everything
+  - name: kind::bug
+    color: "#d73a4a"
+    description: Something is broken
+  - name: kind::feature
+    color: "#0e8a16"
+    description: Something new
+  - name: kind::chore
+    color: "#bfdadc"
+    description: Maintenance, no visible change
